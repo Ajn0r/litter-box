@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Pacifico&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +8,7 @@
 body {
     color: red;
     text-align: center;
+    font-family: Cutive, sans-serif;
 }
 /* Header */
 .flex-container {
@@ -22,18 +25,22 @@ display: flex;
 justify-content: center;
 flex-direction: column;
 color: #474A48;
+padding-bottom: 1rem;
+font-family: Pacifico, sans-serif;
 }
 /* Menu */
+.active {
+    border-bottom: 1px solid #474A48;
+}
 .nav-flex {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
-    font-size: 120%;
+    font-size: 110%;
 }
 .nav-item {
     list-style-type: none;
-
 }
 .nav-item a {
     text-decoration: none;
@@ -42,14 +49,11 @@ color: #474A48;
 .nav-item a:hover {
     border-bottom:1px solid #474A48;
 }
-
 /* Horizonta line style */
 hr {
-    border-bottom: 1px solid #474A48;
+    border-bottom: 1px double #474A48;
     width: 90%;
-    padding: 0;
+    padding: 1px;
     margin: 0 auto;
 }
-.top-line {
-    padding-top: 1rem;
-}
+
