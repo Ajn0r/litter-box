@@ -6,12 +6,16 @@
     border: none;
 }
 body {
-    color: red;
+    color: #463F3A;
     text-align: center;
     font-family: Cutive, sans-serif;
 }
+h1, h2, h3 {
+    color: #463F3A;
+    font-family: Pacifico, sans-serif;
+}
 /* Header */
-.flex-container {
+.flex-container-header {
     min-height: 4rem;
     display: flex;
     flex-direction: column;
@@ -23,14 +27,12 @@ text-decoration: none;
 font-size: 200%;
 display: flex;
 flex-direction: column;
-color: #463F3A;
 padding-bottom: 1rem;
-font-family: Pacifico, sans-serif;
 }
-/* Menu */
 .active {
     border-bottom: 1px solid #463F3A;
 }
+/* Menu */
 .nav-flex {
     display: flex;
     justify-content: space-evenly;
@@ -69,12 +71,27 @@ hr {
     height: 650px;
     margin: 0 auto;
 }
+/* Second section, Main content */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 20rem;
+    flex-wrap: wrap;
+}
+.flex-container > div {
+    min-width: 250px;
+}
  /* Media for small screens of size 580px and smaller*/
 @media  screen and (max-width: 580px) {
 .hero-image{
     background: url('../images/catcuddles.jpg') no-repeat center center;
     height: 400px;
     width: 90%;
+}
+.hero-container {
+    height: 400px;
 }
 .nav-flex {
     flex-direction: column;
