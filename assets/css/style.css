@@ -23,11 +23,9 @@ h1, h2, h3 {
 }
 /* Logo */
 .logo {
-text-decoration: none;
-font-size: 200%;
-display: flex;
-flex-direction: column;
-padding-bottom: 1rem;
+    text-decoration: none;
+    font-size: 200%;
+    padding-bottom: 1rem;
 }
 .active {
     border-bottom: 1px solid #463F3A;
@@ -61,15 +59,14 @@ hr {
 .hero-container {
     height: 650px;
     width: 100%;
-    overflow: hidden;
     margin-top: 1rem;
-
+    overflow: hidden;
 }
-.hero-image {
-    background: url('../images/cathero.jpg') no-repeat center center;
+.hero-image > img {
     width: 90%;
-    height: 650px;
+    height: auto;
     margin: 0 auto;
+    border-radius: 1rem;
 }
 /* Second section, Main content */
 .flex-container {
@@ -85,10 +82,8 @@ hr {
     min-width: 250px;
     width: 90%;
     height: 20rem;
-    align-content: space-around;
     align-items: center;
-    justify-items: center;
-    overflow: hidden;
+
 }
 .flex-container-inner > div {
     max-width: 60%;
