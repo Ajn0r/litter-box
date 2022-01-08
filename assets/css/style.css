@@ -22,18 +22,16 @@ body {
 text-decoration: none;
 font-size: 200%;
 display: flex;
-justify-content: center;
 flex-direction: column;
-color: #474A48;
+color: #463F3A;
 padding-bottom: 1rem;
 font-family: Pacifico, sans-serif;
 }
 /* Menu */
 .active {
-    border-bottom: 1px solid #474A48;
+    border-bottom: 1px solid #463F3A;
 }
 .nav-flex {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
@@ -47,11 +45,11 @@ font-family: Pacifico, sans-serif;
     color: initial;
 }
 .nav-item a:hover {
-    border-bottom:1px solid #474A48;
+    border-bottom:1px solid #463F3A;
 }
 /* Horizonta line style */
 hr {
-    border-bottom: 1px double #474A48;
+    border-bottom: 1px double #463F3A;
     width: 90%;
     padding: 1px;
     margin: 0 auto;
@@ -59,17 +57,33 @@ hr {
 /* First section */
 /* Hero image */ 
 .hero-container {
-    display: flex;
-    height: 600px;
-    align-content: center;
-    align-items: center;
+    height: 650px;
     width: 100%;
     overflow: hidden;
-    padding-top: 4px;
+    margin-top: 1rem;
+
 }
 .hero-image {
     background: url('../images/cathero.jpg') no-repeat center center;
     width: 90%;
-    height: 600px;
+    height: 650px;
     margin: 0 auto;
+}
+ /* Media for small screens of size 580px and smaller*/
+@media  screen and (max-width: 580px) {
+.hero-image{
+    background: url('../images/catcuddles.jpg') no-repeat center center;
+    height: 400px;
+    width: 90%;
+}
+.nav-flex {
+    flex-direction: column;
+}
+.nav-item {
+    padding: 2px;
+}
+.logo {
+font-size: 160%;
+padding: 0;
+}
 }
