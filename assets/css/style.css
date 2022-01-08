@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body {
+    color: #474A48;
+    text-align: center;
+}
+/* Header */
+.flex-container {
+    min-height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+/* Logo */
+.logo {
+text-decoration: none;
+font-size: 200%;
+}
+/* Menu */
+.nav-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    font-size: 120%;
+    
+}
+.nav-item {
+    list-style-type: none;
+}
+.nav-item a {
+    text-decoration: none;
+}
