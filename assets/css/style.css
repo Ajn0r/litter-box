@@ -4,34 +4,52 @@
     border: none;
 }
 body {
-    color: #474A48;
+    color: red;
     text-align: center;
 }
 /* Header */
 .flex-container {
     min-height: 4rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+    flex-direction: column;
+    justify-content: center;    
 }
 /* Logo */
 .logo {
 text-decoration: none;
 font-size: 200%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+color: #474A48;
 }
 /* Menu */
 .nav-flex {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 2rem;
+    padding: 1rem;
     font-size: 120%;
-    
 }
 .nav-item {
     list-style-type: none;
+
 }
 .nav-item a {
     text-decoration: none;
+    color: initial;
+}
+.nav-item a:hover {
+    border-bottom:1px solid #474A48;
+}
+
+/* Horizonta line style */
+hr {
+    border-bottom: 1px solid #474A48;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+}
+.top-line {
+    padding-top: 1rem;
 }
