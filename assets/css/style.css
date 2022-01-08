@@ -74,14 +74,28 @@ hr {
 /* Second section, Main content */
 .flex-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+}
+.flex-container-inner {
+    display: flex;
+    min-width: 250px;
     width: 90%;
     height: 20rem;
-    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
 }
-.flex-container > div {
-    min-width: 250px;
+.flex-container-inner > div {
+    max-width: 60%;
+    height: auto;   
+}
+.flex-container-inner > div > h3 {
+    font-size: 150%;
 }
  /* Media for small screens of size 580px and smaller*/
 @media  screen and (max-width: 580px) {
