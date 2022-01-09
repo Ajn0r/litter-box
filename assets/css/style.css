@@ -9,107 +9,36 @@ body {
     color: #463F3A;
     text-align: center;
     font-family: Cutive, sans-serif;
+    min-height: 100vh;
 }
 h1, h2, h3 {
-    color: #463F3A;
     font-family: Pacifico, sans-serif;
 }
-/* Header */
-.flex-container-header {
-    min-height: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
+footer {
+    background-color: aqua;
 }
-/* Logo */
-.logo {
-    text-decoration: none;
-    font-size: 200%;
-    padding-bottom: 1rem;
+main {
+    background-color: blueviolet;
 }
-.active {
-    border-bottom: 1px solid #463F3A;
+.hero-image {
+    background: url(../images/cathero.jpg);
 }
-/* Menu */
-.nav-flex {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
-    font-size: 110%;
-}
-.nav-item {
-    list-style-type: none;
-}
-.nav-item a {
-    text-decoration: none;
-    color: initial;
-}
-.nav-item a:hover {
-    border-bottom:1px solid #463F3A;
-}
-/* Horizonta line style */
-hr {
-    border-bottom: 1px double #463F3A;
-    width: 90%;
-    padding: 1px;
-    margin: 0 auto;
-}
-/* First section */
-/* Hero image */ 
-.hero-container {
-    height: 650px;
-    width: 100%;
-    margin-top: 1rem;
-    overflow: hidden;
-}
-.hero-image > img {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 1rem;
-}
-/* Second section, Main content */
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20rem;
-    overflow: hidden;
-}
-.flex-container-inner {
-    display: flex;
-    min-width: 250px;
-    width: 90%;
-    height: 20rem;
-    align-items: center;
 
+body {
+    display: grid;
+    grid-template-columns: 1,5rem minmax(400, 650px)
+    minmax(200, 350px)
+    1.5rem;
+    grid-template-areas: 
+    "header header header header"
+    "hero hero hero hero"
+    ". main main ."
+    "footer footer footer footer"
 }
-.flex-container-inner > div {
-    max-width: 60%;
-    height: auto;   
-}
-.flex-container-inner > div > h3 {
-    font-size: 150%;
-}
- /* Media for small screens of size 580px and smaller*/
-@media  screen and (max-width: 580px) {
-.hero-image{
-    background: url('../images/catcuddles.jpg') no-repeat center center;
-    height: 400px;
-    width: 90%;
-}
-.hero-container {
-    height: 400px;
-}
-.nav-flex {
-    flex-direction: column;
-}
-.nav-item {
-    padding: 2px;
-}
-.logo {
-font-size: 160%;
-padding: 0;
-}
-}
+header {grid-area: header;}
+
+.hero-image {grid-area: hero;}
+
+main {grid-area: main;}
+
+footer {grid-area: footer;}
