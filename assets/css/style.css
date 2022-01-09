@@ -64,16 +64,30 @@ header {
     font-size: 2.5rem;
 }
 /* Main - Menu */
-main {
+.main-template-1 {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas: 
-    'main main main main'
-    'main2 main2 main2 main2';
+    gap: 1.5rem;
+    grid-template-columns: auto;
+    Grid-template-areas:
+'one'
+'two'
+'three'
+'four'
+}
+.main-1 {grid-area: one;}
+.main-2 {grid-area: two;}
+.main-3 {grid-area: three;}
+.main-4 {grid-area: four;}
+.main-template-1 > div {
+    min-height: 5rem;
+    min-width: 1rem;
+    border: 1px solid green;
 }
 
+/*
 .main-template-1 {grid-area: main;}
 .main-template-2 {grid-area: main2;}
+*/
 /* Styling menu */
 .menu {
     background-color: rgba(28, 26, 24, 0.8);
