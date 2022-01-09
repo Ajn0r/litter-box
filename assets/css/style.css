@@ -39,12 +39,6 @@ h2,
 h3 {
     font-family: Pacifico, sans-serif;
 }
-
-/* Temporary background colors */
-footer {
-    background-color: aqua;
-}
-
 /* Header - Logo */
 /* Setting the size of the header */
 header {
@@ -60,13 +54,15 @@ header {
     position: relative;
 }
 .header-logo {
-    width: 50%;
+    width: 60%;
     height: 18rem;
 }
 .logo {
     text-decoration: none;
     color: #F4F3EE;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+    position: absolute;
+    top: 2rem;
 }
 /* Styling menu */
 .menu {
@@ -88,55 +84,53 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 3rem;
+    height: auto;
     list-style: none;
+    flex-direction: column;
 }
 /* Style main - Setting grid for first div */
 .main-template-1 {
     display: grid;
-    gap: 1.5rem;
     grid-template-columns: auto;
     Grid-template-areas:
         'one'
         'two'
         'three'
         'four'
-        'five'
+        'five';
 }
-.main-1 {
-    grid-area: one;
-    background-color: grey;
-}
-
-.main-2 {
-    grid-area: two;
-}
-
-.main-3 {
-    grid-area: three;
-}
-
-.main-4 {
-    grid-area: four;
-}
-.main-5 {
-    grid-area: five;
-}
+.main-1 {grid-area: one;}
+.main-2 {grid-area: two;}
+.main-3 {grid-area: three;}
+.main-4 {grid-area: four;}
+.main-5 {grid-area: five;}
 
 .main-template-1>div {
     min-height: 5rem;
     min-width: 1rem;
-    border: 1px solid green;
     padding: 2rem 1rem;
+    background-color: #E0AFA0;
+    margin: 1rem;
+    border-radius: 0.5rem;
 }
 /* Media for medium and tablet screen */
-@media  screen and (min-width: 750px) {
+@media  screen and (min-width: 700px) {
     .main-template-1 {
         display: grid;
         grid-template-areas:
         'one one four' 
         'two five four'
         'three three three';
+    }
+    .logo {
+        font-size: 2.5rem;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 3rem;
+        flex-direction: row;
     }
 }
 /* Media for medium to large screens */
@@ -147,5 +141,9 @@ header {
         'one one two four'
         'five three three four';
     }
+    .logo {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+    }
 }
-
