@@ -5,15 +5,18 @@
     margin: 0;
     border: none;
 }
+
 body {
     color: #38322E;
     text-align: center;
     font-family: Cutive, sans-serif;
     min-height: 100vh;
 }
+
 .active {
     border-bottom: 1px solid #F4F3EE;
 }
+
 /* The main layout using grid 
 body {
     display: grid;
@@ -31,7 +34,9 @@ footer {grid-area: footer;}
 
 */
 /* Sets the font to all h1-h3*/
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: Pacifico, sans-serif;
 }
 
@@ -39,6 +44,7 @@ h1, h2, h3 {
 footer {
     background-color: aqua;
 }
+
 /* Header - Logo */
 /* Setting the size of the header */
 header {
@@ -46,7 +52,6 @@ header {
     height: 700px;
     background-color: #463F3A;
 }
-
 .background-img {
     background-image: url(../images/cathero-unslash-small.jpg);
     background-size: cover;
@@ -63,31 +68,6 @@ header {
     color: #F4F3EE;
     font-size: 2.5rem;
 }
-/* Main - Menu */
-.main-template-1 {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: auto;
-    Grid-template-areas:
-'one'
-'two'
-'three'
-'four'
-}
-.main-1 {grid-area: one;}
-.main-2 {grid-area: two;}
-.main-3 {grid-area: three;}
-.main-4 {grid-area: four;}
-.main-template-1 > div {
-    min-height: 5rem;
-    min-width: 1rem;
-    border: 1px solid green;
-}
-
-/*
-.main-template-1 {grid-area: main;}
-.main-template-2 {grid-area: main2;}
-*/
 /* Styling menu */
 .menu {
     background-color: rgba(28, 26, 24, 0.8);
@@ -97,11 +77,11 @@ header {
     left: 0;
     right: 0;
 }
-.nav-item > a {
+.nav-item>a {
     color: #F4F3EE;
     text-decoration: none;
 }
-.nav-item > a:hover {
+.nav-item>a:hover {
     border-bottom: 1px solid #F4F3EE;
 }
 .nav-menu {
@@ -110,14 +90,62 @@ header {
     align-items: center;
     height: 3rem;
     list-style: none;
-    }
-
-/* Style main */
+}
+/* Style main - Setting grid for first div */
 .main-template-1 {
-    padding: 0 0.5rem;
-    background-color: darksalmon;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: auto;
+    Grid-template-areas:
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'
 }
-.main-template-2 {
-    padding: 0 0.5rem;
-    background-color: darkseagreen;
+.main-1 {
+    grid-area: one;
+    background-color: grey;
 }
+
+.main-2 {
+    grid-area: two;
+}
+
+.main-3 {
+    grid-area: three;
+}
+
+.main-4 {
+    grid-area: four;
+}
+.main-5 {
+    grid-area: five;
+}
+
+.main-template-1>div {
+    min-height: 5rem;
+    min-width: 1rem;
+    border: 1px solid green;
+    padding: 2rem 1rem;
+}
+/* Media for medium and tablet screen */
+@media  screen and (min-width: 750px) {
+    .main-template-1 {
+        display: grid;
+        grid-template-areas:
+        'one one four' 
+        'two five four'
+        'three three three';
+    }
+}
+/* Media for medium to large screens */
+@media  screen and (min-width: 1200px) {
+    .main-template-1 {
+        display: grid;
+        grid-template-areas: 
+        'one one two four'
+        'five three three four';
+    }
+}
+
