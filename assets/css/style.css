@@ -43,7 +43,7 @@ h3 {
 /* Setting the size of the header */
 header {
     width: 100%;
-    height: 700px;
+    height: 80vh;
     background-color: #463F3A;
 }
 .background-img {
@@ -62,7 +62,7 @@ header {
     color: #F4F3EE;
     font-size: 1.75rem;
     position: absolute;
-    top: 2rem;
+    left: 1rem;
 }
 /* Styling menu */
 .menu {
@@ -114,7 +114,7 @@ header {
     border-radius: 0.5rem;
 }
 /* Media for medium and tablet screen */
-@media  screen and (min-width: 700px) {
+@media  screen and (min-width: 750px) {
     .main-template-1 {
         display: grid;
         grid-template-areas:
