@@ -6,20 +6,24 @@
     border: none;
 }
 body {
+    background-image: url("../images/afrah-0x-_TV1zQFU-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     font-family: Cutive, sans-serif;
     min-height: 100vh;
-    color: white;
+    color: black;
+    background-color: #6f6866;
 }
+header, footer, .main-template-1 {
+    background-color: rgba(111, 104, 102, .8);
+}
+
 .active {
-    border-bottom: 1px solid #463f3a;
-}
-/* Sets the font to all h1-h3*/
-h1,
-h2,
-h3 {
-    font-family: Pacifico, sans-serif;
-}
+    border-bottom: 1px solid black;
+}  
+
 /* Header - Logo */
 /* Setting the size of the header */
 header {
@@ -34,8 +38,22 @@ header {
 }
 .logo {
     text-decoration: none;
-    color: #463f3a;
+    color: black;
     font-size: 1.2rem;
+    font-family: Pacifico, sans-serif;
+}
+
+/* Hero image */
+.hero {
+    background-image: url(../images/catandmancoffe.jpg);
+    background-color: #463f3a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 60vh;
+    overflow: hidden;
+    border: 2px solid black;
 }
 /* Styling menu */
 .menu {
@@ -46,11 +64,11 @@ header {
     right: 0;
 }
 .nav-item>a {
-    color: #463f3a;
+    color: black;
     text-decoration: none;
 }
 .nav-item>a:hover {
-    border-bottom: 1px solid #463f3a;
+    border-bottom: 1px solid black;
 }
 .nav-menu {
     display: flex;
@@ -68,29 +86,28 @@ header {
         'one'
         'two'
         'three'
-        'four'
-        'five';
+        'four';
 }
 .main-1 {grid-area: one;}
 .opening-hours {grid-area: two;}
-.main-3 {grid-area: three;}
-.main-4 {grid-area: four;}
-.main-5 {grid-area: five;}
+.main-4 {grid-area: three;}
+.cat-quote {grid-area: four;}
 
 /* Style of main */
 .main-template-1 {
     width: 100%;
-    min-height: 70vh;
+    height: auto;
+    /*
     background-image: url(../images/cathero-unslash-small.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 .main-template-1>div {
     min-height: 5rem;
     min-width: 1rem;
-    background-color: rgba(28, 26, 24, 0.6);
-    border: 1px solid white;
+    padding: 6rem;
+
 }
 .opening-hours > h2, p {
     align-items: center;
@@ -104,7 +121,7 @@ footer {
     padding: 0.5rem 0;
 }
 footer > a {
-    color: #463f3a;
+    color: black;
     text-decoration: none;
     margin: 0 10%;
     font-size: 200%;
@@ -114,9 +131,9 @@ footer > a {
     .main-template-1 {
         display: grid;
         grid-template-areas:
-        'one one four' 
-        'two five four'
-        'three three three';
+        'one  three' 
+        'two  three'
+        'four four ';
     }
     .logo {
         font-size: 2.5rem;
@@ -134,8 +151,8 @@ footer > a {
     .main-template-1 {
         display: grid;
         grid-template-areas: 
-        'one one two four'
-        'five three three four';
+        'one two three'
+        'four four three ';
     }
     .logo {
         position: absolute;
