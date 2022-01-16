@@ -6,7 +6,7 @@
     border: none;
 }
 body {
-    background-image: url("../images/afrah-0x-_TV1zQFU-unsplash.jpg");
+    background-image: url("../images/imgofcoffeinwindow.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +51,7 @@ header {
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
     overflow: hidden;
     border: 2px solid black;
 }
