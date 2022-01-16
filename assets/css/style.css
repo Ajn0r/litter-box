@@ -105,13 +105,29 @@ header {
 .main-4 {grid-area: four;}
 .main-5 {grid-area: five;}
 
+/* Style of main */
+.main-template-1 {
+    background: url(../images/imgofcoffeinwindow.jpg) no-repeat center center;
+}
 .main-template-1>div {
     min-height: 5rem;
     min-width: 1rem;
-    padding: 2rem 1rem;
-    background-color: #E0AFA0;
-    margin: 1rem;
+    background-color: rgba(28, 26, 24, 0.6);
     border-radius: 0.5rem;
+}
+
+/* Style of footer */
+footer {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+footer > a {
+    color: #463f3a;
+    text-decoration: none;
+    margin: 0 10%;
+    font-size: 200%;
 }
 /* Media for medium and tablet screen */
 @media  screen and (min-width: 750px) {
