@@ -72,7 +72,7 @@ header {
         'five';
 }
 .main-1 {grid-area: one;}
-.main-2 {grid-area: two;}
+.opening-hours {grid-area: two;}
 .main-3 {grid-area: three;}
 .main-4 {grid-area: four;}
 .main-5 {grid-area: five;}
@@ -92,7 +92,10 @@ header {
     background-color: rgba(28, 26, 24, 0.6);
     border: 1px solid white;
 }
-
+.opening-hours > h2, p {
+    align-items: center;
+    padding: 0.5rem;
+}
 /* Style of footer */
 footer {
     width: 100%;
