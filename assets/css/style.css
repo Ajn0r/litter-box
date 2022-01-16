@@ -7,7 +7,6 @@
 }
 
 body {
-    color: #38322E;
     text-align: center;
     font-family: Cutive, sans-serif;
     min-height: 100vh;
@@ -43,26 +42,18 @@ h3 {
 /* Setting the size of the header */
 header {
     width: 100%;
-    height: 80vh;
-    background-color: #463F3A;
-}
-.background-img {
-    background-image: url(../images/cathero-unslash-small.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    min-height: 25vh;
     position: relative;
 }
+
 .header-logo {
-    width: 60%;
-    height: 18rem;
+    width: 100%;
+    height: auto;
 }
 .logo {
     text-decoration: none;
-    color: #F4F3EE;
-    font-size: 1.75rem;
-    position: absolute;
-    left: 1rem;
+    color: #463f3a;
+    font-size: 1.2rem;
 }
 /* Styling menu */
 .menu {
@@ -107,7 +98,12 @@ header {
 
 /* Style of main */
 .main-template-1 {
-    background: url(../images/imgofcoffeinwindow.jpg) no-repeat center center;
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(../images/cathero-unslash-small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .main-template-1>div {
     min-height: 5rem;
@@ -159,7 +155,6 @@ footer > a {
     }
     .logo {
         position: absolute;
-        top: 2rem;
         left: 2rem;
     }
 }
