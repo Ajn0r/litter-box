@@ -5,33 +5,15 @@
     margin: 0;
     border: none;
 }
-
 body {
     text-align: center;
     font-family: Cutive, sans-serif;
     min-height: 100vh;
+    color: white;
 }
-
 .active {
-    border-bottom: 1px solid #F4F3EE;
+    border-bottom: 1px solid #463f3a;
 }
-
-/* The main layout using grid 
-body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
-    'header header header header'
-    'main main main main'
-    'footer footer footer footer';
-}
-header {grid-area: header;}
-
-main {grid-area: main;}
-
-footer {grid-area: footer;}
-
-*/
 /* Sets the font to all h1-h3*/
 h1,
 h2,
@@ -57,7 +39,6 @@ header {
 }
 /* Styling menu */
 .menu {
-    background-color: rgba(28, 26, 24, 0.8);
     text-transform: uppercase;
     position: absolute;
     bottom: 0;
@@ -65,11 +46,11 @@ header {
     right: 0;
 }
 .nav-item>a {
-    color: #F4F3EE;
+    color: #463f3a;
     text-decoration: none;
 }
 .nav-item>a:hover {
-    border-bottom: 1px solid #F4F3EE;
+    border-bottom: 1px solid #463f3a;
 }
 .nav-menu {
     display: flex;
@@ -99,7 +80,7 @@ header {
 /* Style of main */
 .main-template-1 {
     width: 100%;
-    min-height: 60vh;
+    min-height: 70vh;
     background-image: url(../images/cathero-unslash-small.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,13 +90,13 @@ header {
     min-height: 5rem;
     min-width: 1rem;
     background-color: rgba(28, 26, 24, 0.6);
-    border-radius: 0.5rem;
+    border: 1px solid white;
 }
 
 /* Style of footer */
 footer {
     width: 100%;
-    height: auto;
+    min-height: 5vh;
     text-align: center;
     padding: 0.5rem 0;
 }
